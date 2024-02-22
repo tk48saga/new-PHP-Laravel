@@ -12,11 +12,11 @@
         <form action="" method="post">
             @csrf
             <label for="name">名前</label>
-            <input type="text" name="name" id="name">
+            <input type="text" name="name" id="name"><br>
             <iabel for="email">メールアドレス</label>
-            <input type="email" name="email" id="email">
+            <input type="email" name="email" id="email"><br>
             <label for="password">パスワード</label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password"><br>
             <button type="submit">返信</button>
         </form>
     </body>
