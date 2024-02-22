@@ -17,7 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// 追記部分
-Route::get('/hello', function(){
-    return 'hello';
-});
+//変更箇所
+Route::get('/hello', 'App\Http\Controllers\HelloController@index');
