@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+//変更箇所
+Route::get('/hello', 'App\Http\Controllers\HelloController@index');
