@@ -18,3 +18,7 @@ Route::get('/', function () {
 });
 
 Route::get('/register',[\App\Http\Controllers\UserController::class,'showRegister']);
+
+Route::middleware('auth')->group(function (){
+    Route::get('/profile',[\App\Http\Controllers\UserController::class,'profile'])->name('profile');
+});
