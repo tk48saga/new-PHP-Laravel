@@ -13,7 +13,7 @@
             @csrf
             <label for="name">名前</label>
             <input type="text" name="name" id="name"><br>
-            <iabel for="email">E-Mail</label>
+            <label for="email">E-Mail</label>
             <input type="email" name="email" id="email"><br>
             <label for="password">パスワード</label>
             <input type="password" name="password" id="password"><br>
