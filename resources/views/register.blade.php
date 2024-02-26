@@ -10,7 +10,6 @@
     <body>
         <h1>登録画面</h1>
         <form action="" method="post">
-            @csrf
             <label for="name">名前</label>
             <input type="text" name="name" id="name"><br>
             <label for="email">E-Mail</label>
