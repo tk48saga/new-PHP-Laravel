@@ -22,3 +22,9 @@ Route::get('/register',[\App\Http\Controllers\UserController::class,'showRegiste
 Route::middleware('auth')->group(function (){
     Route::get('/profile',[\App\Http\Controllers\UserController::class,'profile'])->name('profile');
 });
+
+Route::post('/register',[\App\Http\Controllers\UserController::class,'register']);
+
+Route::middleware('auth')->group(function(){
+    Route::get('/profile',[\App\Http\Controllers\UserController::class,'profile'])->name('prifile');
+});
